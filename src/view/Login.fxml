@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="185.0" prefWidth="569.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Login">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="269.0" minWidth="10.0" prefWidth="153.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="407.0" minWidth="10.0" prefWidth="407.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="32.0" minHeight="10.0" prefHeight="28.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="46.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Button fx:id="prijaviSeBtn" mnemonicParsing="false" onAction="#prijaviSe" prefHeight="15.0" prefWidth="80.0" styleClass="btn" stylesheets="@style.css" text="Prijavi se" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets left="20.0" right="20.0" />
+         </GridPane.margin>
+      </Button>
+      <Label text="Unesite korisničko ime" GridPane.rowIndex="1">
+         <padding>
+            <Insets left="30.0" />
+         </padding>
+      </Label>
+      <Label text="Unesite lozinku" GridPane.rowIndex="2">
+         <padding>
+            <Insets left="30.0" />
+         </padding>
+      </Label>
+      <Label GridPane.rowIndex="4">
+         <padding>
+            <Insets left="30.0" />
+         </padding>
+      </Label>
+      <TextField fx:id="korisnickoImeTxt" styleClass="input" stylesheets="@style.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="20.0" right="20.0" />
+         </GridPane.margin>
+      </TextField>
+      <TextField fx:id="lozinkaTxt" styleClass="input" stylesheets="@style.css" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="20.0" right="20.0" />
+         </GridPane.margin>
+      </TextField>
+      <Label prefHeight="35.0" prefWidth="380.0" text="Dobrodošli na sustav" GridPane.columnIndex="1">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <padding>
+            <Insets left="30.0" />
+         </padding>
+      </Label>
+      <Label fx:id="greskaLbl" text="Unesite ispravne korisničke podatke" textFill="#eb0707" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Label fx:id="uspjehLbl" text="Uspješno ste se prijavili" textFill="#00f552" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Button fx:id="registerBtn" mnemonicParsing="false" onAction="#register" text="Registriraj se" GridPane.rowIndex="4" />
+   </children>
+</GridPane>

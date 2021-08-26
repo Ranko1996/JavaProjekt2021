@@ -1,0 +1,17 @@
+.btn {
+    -fx-background-color: none;
+    -fx-border-color: grey;
+    -fx-border-radius: 10px;
+    -fx-text-color: grey;
+}
+
+.btn:hover {}
+
+.input {
+    -fx-background-color: none;
+    -fx-border-color: whitesmoke whitesmoke #42f5dd whitesmoke;
+}
+
+.input:focused {
+    -fx-border-color: whitesmoke whitesmoke #212426 whitesmoke;
+}

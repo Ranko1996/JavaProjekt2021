@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NotesContoller">
+    <children>
+        <Pane layoutX="8.0" layoutY="2.0" prefHeight="389.0" prefWidth="587.0">
+            <children>
+                <TableView fx:id="allNotesTableView" layoutX="45.0" layoutY="82.0" prefHeight="154.0" prefWidth="504.0">
+                    <columns>
+                        <TableColumn fx:id="titleTblCol" prefWidth="184.0" text="Naslov" />
+                        <TableColumn fx:id="textTblCol" prefWidth="307.0" text="text" />
+                    </columns>
+                </TableView>
+              <Button fx:id="newNoteBtn" layoutX="415.0" layoutY="324.0" mnemonicParsing="false" onAction="#addNew" prefHeight="25.0" prefWidth="133.0" styleClass="btn" text="Dodaj bilješku" />
+              <Label layoutX="194.0" layoutY="27.0" prefHeight="46.0" prefWidth="209.0" text="Sve bilješke">
+               <font>
+                  <Font size="31.0" />
+               </font></Label>
+              <Button fx:id="deleteBtn" layoutX="414.0" layoutY="256.0" mnemonicParsing="false" onAction="#deleteNote" prefHeight="25.0" prefWidth="133.0" styleClass="btn" text="Obriši bilješku" />
+            <Label fx:id="successLbl" layoutX="57.0" layoutY="36.0" text="Label" visible="false" />
+            <Label fx:id="errorLbl" layoutX="100.0" layoutY="36.0" text="Label" visible="false" />
+            <TextField fx:id="nameTxt" layoutX="45.0" layoutY="256.0" prefHeight="25.0" prefWidth="315.0" />
+            <TextArea fx:id="noteTxt" layoutX="45.0" layoutY="289.0" prefHeight="70.0" prefWidth="315.0" />
+            <Button fx:id="logOutButton" layoutX="456.0" layoutY="289.0" mnemonicParsing="false" onAction="#logOut" text="Odjavi se" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
