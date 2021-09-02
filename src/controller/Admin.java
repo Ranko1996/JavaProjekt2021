@@ -8,6 +8,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import main.Main;
 import model.User;
 
+import javax.xml.bind.annotation.XmlList;
 import java.io.IOException;
 import java.net.URL;
 import java.util.Collection;
@@ -34,6 +35,9 @@ public class Admin implements Initializable {
 
     @FXML
     Button logOutBtn;
+
+    @FXML
+    Button notesBtn;
 
     @FXML
     CheckBox adminChbox;
@@ -152,5 +156,12 @@ public class Admin implements Initializable {
         Main.showWindow(
                 getClass(), "../view/Login.fxml",
                 "Login to system", 600, 215);
+    }
+
+    @FXML
+    public void toNotes(ActionEvent ev) throws IOException {
+        Main.showWindow(
+                getClass(),
+                "../view/Notes.fxml", "Dobrodošli", 1200, 1200);
     }
 }

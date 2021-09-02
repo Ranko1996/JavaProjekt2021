@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import main.Main;
 import model.User;
@@ -22,7 +23,7 @@ public class Login {
     TextField korisnickoImeTxt;
 
     @FXML
-    TextField lozinkaTxt;
+    PasswordField lozinkaTxt;
 
     @FXML
     Label greskaLbl;
@@ -62,7 +63,7 @@ public class Login {
                     else{
                         Main.showWindow(
                                 getClass(),
-                                "../view/Notes.fxml", "Dobrodošli", 1200, 1200);
+                                "../view/Events.fxml", "Dobrodošli", 600, 400);
                     }
                 } else {
                     greskaLbl.setText("Unesite ispravne podatke");

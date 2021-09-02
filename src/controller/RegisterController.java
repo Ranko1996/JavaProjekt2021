@@ -7,8 +7,10 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import main.Main;
 import model.User;
 
+import java.io.IOException;
 import java.util.Collection;
 
 public class RegisterController {
@@ -63,6 +65,11 @@ public class RegisterController {
 
         }
 
-
+    @FXML
+    public void backToLogin(ActionEvent ev) throws IOException {
+        Main.showWindow(
+                getClass(), "../view/Login.fxml",
+                "Login to system", 600, 215);
+    }
 
 }

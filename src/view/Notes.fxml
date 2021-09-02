@@ -10,21 +10,21 @@
             <children>
                 <TableView fx:id="allNotesTableView" layoutX="45.0" layoutY="82.0" prefHeight="154.0" prefWidth="504.0">
                     <columns>
-                        <TableColumn fx:id="titleTblCol" prefWidth="184.0" text="Naslov" />
-                        <TableColumn fx:id="textTblCol" prefWidth="307.0" text="text" />
+                        <TableColumn fx:id="textTblCol" prefWidth="136.0" text="text" />
+                        <TableColumn fx:id="titleTblCol" prefWidth="367.0" text="Naslov" />
                     </columns>
                 </TableView>
-              <Button fx:id="newNoteBtn" layoutX="415.0" layoutY="324.0" mnemonicParsing="false" onAction="#addNew" prefHeight="25.0" prefWidth="133.0" styleClass="btn" text="Dodaj bilješku" />
+              <Button fx:id="newNoteBtn" layoutX="415.0" layoutY="324.0" mnemonicParsing="false" onAction="#addNew" prefHeight="27.0" prefWidth="133.0" styleClass="btn" stylesheets="@style.css" text="Dodaj bilješku" />
               <Label layoutX="194.0" layoutY="27.0" prefHeight="46.0" prefWidth="209.0" text="Sve bilješke">
                <font>
                   <Font size="31.0" />
                </font></Label>
-              <Button fx:id="deleteBtn" layoutX="414.0" layoutY="256.0" mnemonicParsing="false" onAction="#deleteNote" prefHeight="25.0" prefWidth="133.0" styleClass="btn" text="Obriši bilješku" />
+              <Button fx:id="deleteBtn" layoutX="414.0" layoutY="256.0" mnemonicParsing="false" onAction="#deleteNote" prefHeight="25.0" prefWidth="133.0" styleClass="btn" stylesheets="@style.css" text="Obriši bilješku" />
             <Label fx:id="successLbl" layoutX="57.0" layoutY="36.0" text="Label" visible="false" />
             <Label fx:id="errorLbl" layoutX="100.0" layoutY="36.0" text="Label" visible="false" />
-            <TextField fx:id="nameTxt" layoutX="45.0" layoutY="256.0" prefHeight="25.0" prefWidth="315.0" />
-            <TextArea fx:id="noteTxt" layoutX="45.0" layoutY="289.0" prefHeight="70.0" prefWidth="315.0" />
-            <Button fx:id="logOutButton" layoutX="456.0" layoutY="289.0" mnemonicParsing="false" onAction="#logOut" text="Odjavi se" />
+            <TextField fx:id="nameTxt" layoutX="45.0" layoutY="256.0" prefHeight="25.0" prefWidth="315.0" promptText="Unesite naslov" styleClass="input" stylesheets="@style.css" />
+            <TextArea fx:id="noteTxt" layoutX="45.0" layoutY="289.0" prefHeight="70.0" prefWidth="315.0" promptText="Unesite vaš tekst" styleClass="input" stylesheets="@style.css" />
+            <Button fx:id="logOutButton" layoutX="415.0" layoutY="289.0" mnemonicParsing="false" onAction="#logOut" prefHeight="27.0" prefWidth="133.0" styleClass="btn" stylesheets="@style.css" text="Odjavi se" />
             </children>
         </Pane>
     </children>

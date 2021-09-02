@@ -5,13 +5,13 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="366.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Admin">
+<AnchorPane prefHeight="425.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Admin">
    <children>
-      <TextField id="nameInputTxt" fx:id="nameInp" alignment="CENTER" layoutX="427.0" layoutY="107.0" prefHeight="25.0" prefWidth="141.0" />
-      <TextField id="lastNameInputTxt" fx:id="lastNameInp" layoutX="429.0" layoutY="162.0" prefHeight="25.0" prefWidth="141.0" />
-      <TextField id="emailInputTxt" fx:id="emailInp" layoutX="429.0" layoutY="214.0" prefHeight="25.0" prefWidth="141.0" />
-      <PasswordField id="passwordInputTxt" fx:id="passwordInp" alignment="CENTER_RIGHT" layoutX="429.0" layoutY="271.0" prefHeight="25.0" prefWidth="141.0" />
-      <Button id="addUserBtn" fx:id="addUserBtn" layoutX="436.0" layoutY="353.0" mnemonicParsing="false" onAction="#addUserToDB" prefHeight="25.0" prefWidth="141.0" text="Dodaj korisnika" />
+      <TextField id="nameInputTxt" fx:id="nameInp" alignment="TOP_LEFT" layoutX="427.0" layoutY="107.0" prefHeight="25.0" prefWidth="141.0" styleClass="input" stylesheets="@style.css" />
+      <TextField id="lastNameInputTxt" fx:id="lastNameInp" alignment="TOP_LEFT" layoutX="429.0" layoutY="162.0" prefHeight="25.0" prefWidth="141.0" styleClass="input" stylesheets="@style.css" />
+      <TextField id="emailInputTxt" fx:id="emailInp" layoutX="429.0" layoutY="214.0" prefHeight="25.0" prefWidth="141.0" styleClass="input" stylesheets="@style.css" />
+      <PasswordField id="passwordInputTxt" fx:id="passwordInp" alignment="CENTER_RIGHT" layoutX="429.0" layoutY="271.0" prefHeight="25.0" prefWidth="141.0" styleClass="input" stylesheets="@style.css" />
+      <Button id="addUserBtn" fx:id="addUserBtn" layoutX="436.0" layoutY="353.0" mnemonicParsing="false" onAction="#addUserToDB" prefHeight="25.0" prefWidth="141.0" styleClass="btn" stylesheets="@style.css" text="Dodaj korisnika" />
       <Label layoutX="431.0" layoutY="77.0" text="Unesite ime" />
       <Label layoutX="429.0" layoutY="145.0" text="Unesite prezime" />
       <Label layoutX="429.0" layoutY="197.0" text="Unesite email adresu" />
@@ -19,19 +19,20 @@
       <CheckBox id="AdminCBox" fx:id="adminChbox" layoutX="478.0" layoutY="316.0" mnemonicParsing="false" text="Admin" />
       <Label id="succesLbl" fx:id="succesLbl" layoutX="343.0" layoutY="53.0" text="Uspješno ste dodali korisnika" textFill="#21943e" visible="false" />
       <Label id="failLbl" fx:id="errorLbl" layoutX="335.0" layoutY="45.0" text="Neuspješno dodavanje korisnika" textFill="#ff0f0f" visible="false" />
-      <Label fx:id="loggedUserLbl" layoutX="280.0" layoutY="14.0" text="Label">
+      <Label fx:id="loggedUserLbl" layoutX="36.0" layoutY="15.0" text="Label">
          <font>
             <Font size="27.0" />
          </font>
       </Label>
-      <Button fx:id="logOutBtn" layoutX="499.0" layoutY="21.0" mnemonicParsing="false" onAction="#logout" text="Odjavi se" />
+      <Button fx:id="logOutBtn" layoutX="461.0" layoutY="21.0" mnemonicParsing="false" onAction="#logout" styleClass="btn" stylesheets="@style.css" text="Odjavi se" />
       <TableView fx:id="tableView" layoutX="14.0" layoutY="77.0" prefHeight="257.0" prefWidth="388.0">
         <columns>
-          <TableColumn editable="true" fx:id="firstnameTabCol" onEditCommit="#editUserFirstName" prefWidth="75.0" text="Firstname" />
-          <TableColumn editable="true"  fx:id="lastnameTabCol" onEditCommit="#editUserLastName" prefWidth="75.0" text="Lastname" />
+          <TableColumn fx:id="firstnameTabCol" editable="true" onEditCommit="#editUserFirstName" prefWidth="75.0" text="Firstname" />
+          <TableColumn fx:id="lastnameTabCol" editable="true" onEditCommit="#editUserLastName" prefWidth="75.0" text="Lastname" />
             <TableColumn fx:id="emailTabCol" prefWidth="75.0" text="Email" />
         </columns>
       </TableView>
-      <Button fx:id="deleteUserBtn" layoutX="312.0" layoutY="352.0" mnemonicParsing="false" onAction="#deleteUserFromDatabase" text="Izbriši korisnika" />
+      <Button fx:id="deleteUserBtn" layoutX="312.0" layoutY="352.0" mnemonicParsing="false" onAction="#deleteUserFromDatabase" styleClass="btn" stylesheets="@style.css" text="Izbriši korisnika" />
+      <Button fx:id="notesBtn" layoutX="320.0" layoutY="22.0" mnemonicParsing="false" onAction="#toNotes" styleClass="btn" stylesheets="@style.css" text="Dodaj bilješku" />
    </children>
 </AnchorPane>

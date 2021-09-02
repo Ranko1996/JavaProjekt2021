@@ -44,11 +44,6 @@
             <Insets left="20.0" right="20.0" />
          </GridPane.margin>
       </TextField>
-      <TextField fx:id="lozinkaTxt" styleClass="input" stylesheets="@style.css" GridPane.columnIndex="1" GridPane.rowIndex="2">
-         <GridPane.margin>
-            <Insets left="20.0" right="20.0" />
-         </GridPane.margin>
-      </TextField>
       <Label prefHeight="35.0" prefWidth="380.0" text="Dobrodošli na sustav" GridPane.columnIndex="1">
          <font>
             <Font name="System Bold" size="24.0" />
@@ -59,6 +54,10 @@
       </Label>
       <Label fx:id="greskaLbl" text="Unesite ispravne korisničke podatke" textFill="#eb0707" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
       <Label fx:id="uspjehLbl" text="Uspješno ste se prijavili" textFill="#00f552" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-      <Button fx:id="registerBtn" mnemonicParsing="false" onAction="#register" text="Registriraj se" GridPane.rowIndex="4" />
+      <Button fx:id="registerBtn" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#register" prefHeight="27.0" prefWidth="88.0" styleClass="btn" stylesheets="@style.css" text="Registriraj se" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets left="120.0" />
+         </GridPane.margin></Button>
+      <PasswordField fx:id="lozinkaTxt" prefHeight="27.0" prefWidth="133.0" styleClass="input" stylesheets="@style.css" GridPane.columnIndex="1" GridPane.rowIndex="2" />
    </children>
 </GridPane>
