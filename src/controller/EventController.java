@@ -80,7 +80,7 @@ public class EventController  implements Initializable {
 
     @FXML
     public void addEvent(ActionEvent ev){
-        String event = this.newEventInp.getText().toString();
+        /*String event = this.newEventInp.getText().toString();
         String description = this.eventDescriptionInp.getText().toString();
         String place = this.eventPlaceInp.getText().toString();
         dateInp.setValue(LocalDate.now());
@@ -102,7 +102,7 @@ public class EventController  implements Initializable {
             n.setUserFK(Login.loggedInUser.getId());
 
 
-            n.setDate(date);
+           // n.setDate(date);
             System.out.println(date);
             newEventInp.setText("");
             eventDescriptionInp.setText("");
@@ -117,7 +117,7 @@ public class EventController  implements Initializable {
                 errorLbl.setText("Došlo je do pogreške: dodavanje nove poruke nije uspjelo.");
                 successLbl.setVisible(false);
             }
-        }
+        }*/
     }
 
     @FXML

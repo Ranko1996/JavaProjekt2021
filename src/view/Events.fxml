@@ -18,13 +18,13 @@
             </children>
         </Pane>
         <Label layoutX="252.0" layoutY="20.0" text="Događaji" />
-        <Button fx:id="newEventBtn" layoutX="445.0" layoutY="311.0" mnemonicParsing="false" onAction="#addEvent" text="Dodaj novi događaj" />
+        <Button fx:id="newEventBtn" layoutX="445.0" layoutY="311.0" mnemonicParsing="false" text="Dodaj novi događaj" />
         <Button fx:id="deleteBtn" layoutX="445.0" layoutY="350.0" mnemonicParsing="false" onAction="#deleteEvent" prefHeight="25.0" prefWidth="120.0" text="Obriši događaj" />
       <TextField fx:id="newEventInp" layoutX="70.0" layoutY="241.0" prefHeight="25.0" prefWidth="174.0" promptText="Dodajte događaj" />
       <TextField fx:id="eventDescriptionInp" layoutX="70.0" layoutY="278.0" prefHeight="25.0" prefWidth="174.0" promptText="Dodajte opis" />
       <TextField fx:id="eventPlaceInp" layoutX="70.0" layoutY="317.0" prefHeight="25.0" prefWidth="174.0" promptText="Dodajte mjesto" />
       <DatePicker fx:id="dateInp" layoutX="70.0" layoutY="350.0" promptText="Dodajte datum" />
       <Label fx:id="errorLbl" layoutX="111.0" layoutY="20.0" textFill="#f80909" visible="false" />
-      <Label fx:id="succesLbl" layoutX="56.0" layoutY="20.0" visible="false" />
+      <Label fx:id="successLbl" layoutX="56.0" layoutY="20.0" visible="false" />
     </children>
 </AnchorPane>
